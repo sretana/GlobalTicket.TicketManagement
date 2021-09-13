@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GlobalTicket.TicketManagement.Domain.Entities
 {
-    class Category:AuditableEntity
+    public class Category:AuditableEntity
     {
         public Guid CategoryId { get; set; }
         public string Name { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GlobalTicket.TicketManagement.Domain.Common
 {
-    class AuditableEntity
+    public class AuditableEntity
     {
         public string CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
