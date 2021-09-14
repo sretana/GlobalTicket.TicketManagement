@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent
 {
-    public class CreateEventCommandHandler : IRequestHandler<DeleteEventComman, Guid>
+    public class CreateEventCommandHandler : IRequestHandler<CreateEventComman, Guid>
     {
         private readonly IEventRepository _eventRepository;
         private readonly IMapper _mapper;
@@ -21,8 +21,14 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.Cre
             _mapper = mapper;
         }
 
-        public async Task<Guid> Handle(DeleteEventComman request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateEventComman request, CancellationToken cancellationToken)
         {
+            var validator = new CreateEventCommandValidator();
+            var validationResult = await validator.ValidateAsync(request);
+
+            if (validationResult.Errors.Count > 0)
+                throw new Exceptions.ValidationException(validationResult);
+
             var @event = _mapper.Map<Event>(request);
             @event = await _eventRepository.AddAsync(@event);
             return @event.EventId;
