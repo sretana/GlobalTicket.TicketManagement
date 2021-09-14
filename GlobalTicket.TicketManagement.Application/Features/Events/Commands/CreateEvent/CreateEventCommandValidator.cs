@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent
 {
-    public class CreateEventCommandValidator:AbstractValidator<CreateEventComman>
+    public class CreateEventCommandValidator:AbstractValidator<CreateEventCommand>
     {
         private readonly IEventRepository _eventRepository;
 
@@ -34,7 +34,7 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.Cre
 
         }
 
-        private async Task<bool> EventNameAndDateUnique(CreateEventComman arg1, CancellationToken arg2)
+        private async Task<bool> EventNameAndDateUnique(CreateEventCommand arg1, CancellationToken arg2)
         {
             return !(await _eventRepository.IsEventNameAndDateUnique(arg1.Name, arg1.Date));
         }

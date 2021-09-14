@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent
 {
-    public class CreateEventComman:IRequest<Guid> // this return the id of an event
+    public class CreateEventCommand:IRequest<Guid> // this return the id of an event
     {
         public string Name { get; set; }
         public int Price { get; set; }
