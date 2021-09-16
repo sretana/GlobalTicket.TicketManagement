@@ -12,6 +12,4 @@
   <ItemGroup>
     <ProjectReference Include="..\GlobalTicket.TicketManagement.Application\GlobalTicket.TicketManagement.Application.csproj" />
   </ItemGroup>
-
-Mail
 </Project>
