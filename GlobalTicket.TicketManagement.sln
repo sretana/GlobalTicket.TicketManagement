@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalTicket.TicketManageme
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalTicket.TicketManagement.Application", "GlobalTicket.TicketManagement.Application\GlobalTicket.TicketManagement.Application.csproj", "{A0BCB4CD-1E22-4BB3-BCB7-FCAF8DE1AEE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalTicket.TicketManagement.Persistence", "GlobalTicket.TicketManagement.Persistence\GlobalTicket.TicketManagement.Persistence.csproj", "{50F28E5C-9FEF-49E2-A4E5-828F9370B52F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalTicket.TicketManagement.Persistence", "GlobalTicket.TicketManagement.Persistence\GlobalTicket.TicketManagement.Persistence.csproj", "{50F28E5C-9FEF-49E2-A4E5-828F9370B52F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalTicket.TicketManagement.Infrastrtc", "GlobalTicket.TicketManagement.Infrastrtc\GlobalTicket.TicketManagement.Infrastrtc.csproj", "{3B913471-4099-483B-8982-80E69C427CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalTicket.TicketManagement.Api", "GlobalTicket.TicketManagement.Api\GlobalTicket.TicketManagement.Api.csproj", "{83A86E71-2285-4ECF-BDFE-47908FB2FB7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{3B913471-4099-483B-8982-80E69C427CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B913471-4099-483B-8982-80E69C427CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B913471-4099-483B-8982-80E69C427CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A86E71-2285-4ECF-BDFE-47908FB2FB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A86E71-2285-4ECF-BDFE-47908FB2FB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A86E71-2285-4ECF-BDFE-47908FB2FB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A86E71-2285-4ECF-BDFE-47908FB2FB7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{A0BCB4CD-1E22-4BB3-BCB7-FCAF8DE1AEE8} = {8D6D312F-54C6-4E51-AF7A-84BAE5DC8B62}
 		{50F28E5C-9FEF-49E2-A4E5-828F9370B52F} = {A2D6449B-0086-4681-ADE7-E8BED2CC2619}
 		{3B913471-4099-483B-8982-80E69C427CCB} = {A2D6449B-0086-4681-ADE7-E8BED2CC2619}
+		{83A86E71-2285-4ECF-BDFE-47908FB2FB7F} = {9A7770A8-21C7-4F47-BAEA-F2F6B30BFBB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0111863-43DA-4532-A877-61128B00BF6A}
